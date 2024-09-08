@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:calendar_appbar/calendar_appbar.dart';
 import 'package:flutter_application_1/page/category_page.dart';
 import 'package:flutter_application_1/page/home_page.dart';
+import 'package:flutter_application_1/page/transaksi_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class MainPage extends StatefulWidget {
@@ -43,7 +44,13 @@ class _MainPageState extends State<MainPage> {
       floatingActionButton: Visibility(
         visible: (currentindex == 0) ? true : false,
         child: FloatingActionButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => TransaksiPage()))
+                .then((value) {
+              setState(() {});
+            });
+          },
           backgroundColor: Colors.lightBlue,
           child: Icon(Icons.add),
         ),

@@ -41,14 +41,11 @@ class _HomePageState extends State<HomePage> {
                           Text(
                             "pemasukan",
                             style: GoogleFonts.montserrat(
-                                color: Colors.white, fontSize: 12),
-                          ),
-                          SizedBox(
-                            height: 10,
+                                color: Colors.white, fontSize: 14),
                           ),
                           Text("RP. 10.000.000",
                               style: GoogleFonts.montserrat(
-                                  color: Colors.white, fontSize: 14))
+                                  color: Colors.white, fontSize: 16))
                         ],
                       )
                     ],
@@ -64,8 +61,13 @@ class _HomePageState extends State<HomePage> {
                           decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(8))),
-                      SizedBox(
-                        width: 15,
+                      VerticalDivider(
+                        color: Colors.red, // Warna garis
+                        thickness: 20, // Ketebalan garis
+                        width:
+                            4, // Jarak total antara elemen di kiri dan kanan divider
+                        indent: 10, // Jarak dari atas
+                        endIndent: 10, // Jarak dari bawah
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -73,14 +75,11 @@ class _HomePageState extends State<HomePage> {
                           Text(
                             "pengeluaran",
                             style: GoogleFonts.montserrat(
-                                color: Colors.white, fontSize: 12),
-                          ),
-                          SizedBox(
-                            height: 10,
+                                color: Colors.white, fontSize: 14),
                           ),
                           Text("RP. 1.000.000",
                               style: GoogleFonts.montserrat(
-                                  color: Colors.white, fontSize: 14))
+                                  color: Colors.white, fontSize: 16))
                         ],
                       )
                     ],
